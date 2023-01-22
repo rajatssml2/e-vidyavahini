@@ -1,0 +1,214 @@
+<nav class="nav-menu d-none d-lg-block nav-itm-l" id="nav-itm-l">
+    <ul class="">
+        <li *ngIf="isLoggedIn=='true'" class="active"><a [routerLink]="['/welcome']" class="nav-link px-2">Home</a>
+        </li>
+
+        <li *ngIf="isLoggedIn=='true'" class="drop-down">
+            <a class="dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Teacher Activity
+            </a>
+            <ul style="width: 380%;">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <li><a class="dropdown-item">Registration- View-Update</a></li>
+                        <li><a class="dropdown-item">Detailed Profile Update</a></li>
+                        <li><a class="dropdown-item">Update Service Status</a></li>
+                        <li><a class="dropdown-item">Teacher MIS</a></li>
+                        <li><a class="dropdown-item">Teachers Full Month Report</a></li>
+                    </div>
+                    <div class="col-sm-6">
+                        <li><a class="dropdown-item">Update Retiral Benefits</a></li>
+                        <li><a class="dropdown-item">Teacher Device Logout</a></li>
+                        <li><a class="dropdown-item">Assistance Teachers Verification Details</a></li>
+                        <li><a class="dropdown-item">Teacher Monthly Attendance Report</a></li>
+
+                    </div>
+                </div>
+            </ul>
+        </li>
+
+        <li *ngIf="isLoggedIn=='true'" class="drop-down">
+            <a class="dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Student Activity
+            </a>
+            <ul style="width: 270%;">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <li><a class="dropdown-item">Child UDISE Mandatory Field</a></li>
+                        <li><a class="dropdown-item">Student Progression</a></li>
+                        <li><a class="dropdown-item">School Unfreeze Reportcard</a></li>
+                        <li><a class="dropdown-item">Student Reportcard</a></li>
+                        <li><a class="dropdown-item">Student Assessment</a></li>
+                    </div>
+                    <div class="col-sm-6">
+                        <li><a class="dropdown-item">Registration-View Updation</a></li>
+                        <li><a class="dropdown-item">Bulk Student Edit</a></li>
+                        <li><a class="dropdown-item">Student Upload</a></li>
+                        <li><a class="dropdown-item">Student MIS</a></li>
+                        <li><a class="dropdown-item">School Un-freeze MIS</a></li>
+                    </div>
+                </div>
+            </ul>
+        </li>
+
+        <li *ngIf="isLoggedIn=='true'" class="drop-down">
+            <a class="dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Scorecard-Scheduler
+            </a>
+            <ul>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <li><a class="dropdown-item">View Scorecard Report</a></li>
+                        <li><a class="dropdown-item">Student Cwsn Report</a></li>
+                    </div>
+
+                </div>
+            </ul>
+        </li>
+        <li *ngIf="isLoggedIn=='true'" class="drop-down">
+            <a class="dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Leave Management
+            </a>
+            <ul>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <li><a class="dropdown-item">Leave Types</a></li>
+                        <li><a class="dropdown-item">Leave MIS</a></li>
+                        <li><a class="dropdown-item">Leave Entitlement</a></li>
+                        <li><a class="dropdown-item">Apply Leave</a></li>
+                        <li><a class="dropdown-item">Leave Status</a></li>
+                    </div>
+
+                </div>
+            </ul>
+        </li>
+        <li *ngIf="isLoggedIn=='true'" class="drop-down">
+            <a class="dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Mid-day Meal
+            </a>
+            <ul style="width: 320%;left: -200%;">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <li><a class="dropdown-item">Manage MDM Menu</a></li>
+                        <li><a class="dropdown-item">Daily Menu</a></li>
+                        <li><a class="dropdown-item">Student Expenses</a></li>
+
+                        <li><a class="dropdown-item">Stock Report</a></li>
+                    </div>
+                    <div class="col-sm-6">
+                        <li><a class="dropdown-item">Daily Consumption Report</a></li>
+
+                        <li><a class="dropdown-item">Cook Details</a></li>
+                        <li><a class="dropdown-item">MDM MIS</a></li>
+                        <li><a class="dropdown-item">Update Opening Stock</a></li>
+                    </div>
+                </div>
+            </ul>
+        </li>
+        <li *ngIf="isLoggedIn=='true'" class="drop-down">
+            <a class="dropdown-toggle" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                More...
+            </a>
+            <ul>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <li class="drop-down">
+                            <a class="" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">Dashboard</a>
+                            <ul>
+                                <li><a class="dropdown-item" href="javascript:void(0)">Staff</a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">Student</a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">Academic</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="drop-down">
+                            <a class="" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">Book Distribution</a>
+                            <ul style="width: 140%;left: -140%;top: -125%;">
+                                <li><a class="dropdown-item" href="javascript:void(0)">TextBook Distribution</a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">TextBook Distribution MIS</a>
+                                </li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">Book Distribution and Enrollment
+                                        Report</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="drop-down">
+                            <a class="" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">User Management</a>
+                            <ul style="top: -224%;">
+                                <li><a class="dropdown-item" href="javascript:void(0)">Manage User</a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">Manage Profile</a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0)">User MIS</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="drop-down">
+                            <a class="" href="javascript:void(0)" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false">Manage Accessories</a>
+                            <ul style="width: 300%;left: -300%; top: -325%">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <li><a class="dropdown-item" href="javascript:void(0)">Scorecard Subject</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="javascript:void(0)">Tag Reportcard
+                                                Subject-Class</a></li>
+                                        <li><a class="dropdown-item">Subject</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0)">Subject Tagging</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0)">Schedule SMS Text
+                                                Config</a></li>
+                                        <li><a class="dropdown-item" href="javascript:void(0)">School Timing</a></li>
+                                        <li><a class="dropdown-item">Appoint Subject</a></li>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <li><a class="dropdown-item">GeoFencing Config</a></li>
+
+                                        <li><a class="dropdown-item">Schedule SMS Enable/Disable</a></li>
+                                        <li><a class="dropdown-item">Device Information</a></li>
+                                        <li><a class="dropdown-item">Notification Category</a></li>
+                                        <li><a class="dropdown-item">Notification Component</a></li>
+                                        <li><a class="dropdown-item">Feedback Category</a></li>
+                                    </div>
+                                </div>
+                            </ul>
+
+                            <ul>
+
+                            </ul>
+                        </li>
+                        <li><a class="dropdown-item">Manage School</a></li>
+                        <li><a class="dropdown-item">Monitoring</a></li>
+                        <li><a class="dropdown-item">Learning Material</a></li>
+                        <li><a class="dropdown-item">Facility and Infrastructure</a></li>
+                    </div>
+
+                </div>
+            </ul>
+        </li>
+
+        <li *ngIf="isLoggedIn=='true'" class="drop-down">
+            <a href="javascript:void(0)" class="dropdown-toggle profile-img" data-bs-toggle="dropdown"
+                aria-expanded="true" style="width: 30px">
+                <img src="../../../assets/images/profileLogo.png" alt="mdo" width="32" height="32"
+                    class="rounded-circle">
+            </a>
+            <ul style="left: -78px;">
+                <li><a class="dropdown-item" href="javascript:void(0)">Ray Ben</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Settings</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Profile</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="javascript:void(0)" (click)="onLogOut()">Sign out</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</nav>

@@ -1,0 +1,35 @@
+footer {
+    background-color: rgb(13 64 130);
+    /* margin-top: 2rem; */
+    padding-top: 2rem;
+}
+footer p{
+    font-size: 14px;
+}
+footer svg{
+	width: 50px;
+}
+footer .stroke:before{
+    top: 34px;
+}
+footer .stroke:after{
+    top: 34px;
+}
+.mail-svg{
+    width: 23px;
+}
+.call-section{
+    margin-top: 5rem;
+}
+.call-section svg{
+    width: 28px;
+    margin-right: 1rem;
+}
+.copyright-section {
+    background-color: rgb(13 64 130);
+    border-top: 1px solid rgb(132 132 132);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 14px;
+    color: rgb(153 153 154);
+}
