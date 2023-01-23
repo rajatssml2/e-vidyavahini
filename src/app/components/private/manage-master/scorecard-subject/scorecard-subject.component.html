@@ -1,0 +1,22 @@
+<section>
+    <div>
+        <button type="submit" style="float: right;" class="btn btn-secondary mb-2" (click)="addScorecard()">Add New</button>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-md-8" style="font-size: 20px; font-weight: 600; color: #01458e;"> 
+            Scorecard Subject 
+        </div>
+        <div class="col-lg-4 col-md-4">
+            <form novalidate="" class="form-inline ng-untouched ng-pristine ng-valid">
+                <div class="form-group mx-sm-3 mb-2"><label for="appNo"
+                    class="sr-only">Subject</label><input type="text"
+                    id="appNo" placeholder="Subject" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary mb-2">Search</button>
+            </form>
+        </div>
+    </div>
+    <div>
+        <app-ag-table [columnDefs]="columnDefs" [rowData]="rowData"></app-ag-table>
+    </div>
+</section>

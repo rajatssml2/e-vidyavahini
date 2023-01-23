@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons"); 
 @import '~ngx-toastr/toastr';
 
-/* @import 'ag-grid-community/styles/ag-grid.css';
-@import 'ag-grid-community/styles/ag-theme-alpine.css'; */
+@import "~ag-grid-community/styles//ag-grid.css";
+@import "~ag-grid-community/styles//ag-theme-alpine.css";
 /* @import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
 @import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default'; */
 html,
@@ -13862,4 +13862,7 @@ body .slick-next::before {
 
 .slick-slide img {
     height: 400px;
+}
+.form-inline {
+	display: flex;
 }

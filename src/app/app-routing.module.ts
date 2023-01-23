@@ -34,7 +34,8 @@ const routes: Routes = [
     component: PrivateComponent,
     children: [
       { path: 'welcome', loadChildren: () => import('./components/private/welcome/welcome.module').then(m => m.WelcomeModule) },
-      
+      { path: '', loadChildren: () => import('./components/private/manage-master/scorecard-subject/scorecard-subject.module').then(m => m.ScorecardSubjectModule) },
+
       // { path: 'login', loadChildren: () => import('../../login/login.module').then(m => m.LoginModule) },
       // { path: 'register', loadChildren: () => import('../../register/register.module').then(m => m.RegisterModule) },
       // { path: 'forgot-password', loadChildren: () => import('../../forgotpassword/forgotpassword.module').then(m => m.ForgotpasswordModule) },

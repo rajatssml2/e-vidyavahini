@@ -1,0 +1,31 @@
+<section id="search-application">
+    <div class="container" style="width:50%">
+        <h3>Add Subject</h3>
+        <div class="card">
+            <div class="card-body">
+                <form [formGroup]="scorecardForm">
+                    <div>
+                        <app-text-field [type]="'text'" [placeholder]="'Enter Name'" [label]="'Name'" formControlName='employee_name' [maxlength]="100" [style]="'width:100%;padding-left:10px'"></app-text-field>
+                        
+                    </div>
+                    <div>
+                        <app-text-field [type]="'text'" [placeholder]="'Enter Age'" [label]="'Age'" formControlName='employee_age' [maxlength]="100" [style]="'width:100%;padding-left:10px'"></app-text-field>
+                        <!-- <app-text-area class="property-form" [label]="'Description'" [placeholder]="'Enter Description'" formControlName="description" [style]="'width:100%;padding-left:10px'"></app-text-area> -->
+                    </div>
+                    <div>
+                        <app-text-field [type]="'text'" [placeholder]="'Enter Salary'" [label]="'Salary'" formControlName='employee_salary' [maxlength]="100" [style]="'width:100%;padding-left:10px'"></app-text-field>
+                    </div>
+
+                    <div style="text-align:center">
+                        <app-button *ngIf="!id" [type]="'submit'" value="Submit" [text]="'Add'" [btnId]="'primary'" [style]="'width: 20%;margin-top:10px'" (click)="onSubmit($event)"></app-button>
+                        <app-button *ngIf="id" [type]="'submit'" value="Submit" [text]="'Update'" [btnId]="'primary'" [style]="'width: 20%;margin-top:10px'" (click)="onUpdate($event)"></app-button>
+                        <app-button *ngIf="id" [type]="'submit'" value="Submit" [text]="'Delete'" [btnId]="'warn'" [style]="'width: 20%;margin-top:10px; margin-left:10px;'" (click)="onDelete($event)"></app-button>
+
+                    </div>
+                </form>
+                
+            </div>
+
+        </div>
+    </div>
+</section>

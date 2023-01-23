@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule, HttpHeaders, HTTP_INTERCEPTORS } from '@angular/common/http';
+
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { ToastrModule } from 'ngx-toastr';
@@ -36,6 +38,8 @@ import { CommonHeaderComponent } from './components/common/common-header/common-
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    
     ToastrModule.forRoot({
       timeOut: 5000,
       positionClass: 'toast-bottom-center',

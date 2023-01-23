@@ -29,11 +29,13 @@ import { TextFieldComponent } from '../../components/common/text-field/text-fiel
 import { TextAreaComponent } from '../../components/common/text-area/text-area.component';
 import { SelectSearchComponent } from '../../components/common/select-search/select-search.component';
 // mat module import end
+import { AgGridModule } from 'ag-grid-angular';
 import {
   FormsModule,
   ReactiveFormsModule,
   } from "@angular/forms";
 import { ButtonComponent } from '../../components/common/button/button.component';
+import { AgTableComponent } from '../../components/common/ag-table/ag-table.component';
 
 
 @NgModule({
@@ -41,7 +43,8 @@ import { ButtonComponent } from '../../components/common/button/button.component
     TextFieldComponent,
     TextAreaComponent,
     SelectSearchComponent,
-    ButtonComponent
+    ButtonComponent,
+    AgTableComponent
   ],
   imports: [
     CommonModule,
@@ -70,6 +73,7 @@ import { ButtonComponent } from '../../components/common/button/button.component
     MatTabsModule,
     MatProgressBarModule,
     MatPaginatorModule,
+    AgGridModule
   ],
   exports: [
     CommonModule,
@@ -97,11 +101,13 @@ import { ButtonComponent } from '../../components/common/button/button.component
     MatPaginatorModule,
     MatTabsModule,
     MatProgressBarModule,
+    AgGridModule,
 
     TextFieldComponent,
     TextAreaComponent,
     SelectSearchComponent,
-    ButtonComponent
+    ButtonComponent,
+    AgTableComponent
   ]
 })
 export class SharedModule { }

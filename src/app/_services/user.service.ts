@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
+import { Observable, Subject, BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
+
+  loadingSub: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
   constructor() { }
 
@@ -19,5 +22,15 @@ export class UserService {
     localStorage.removeItem('password');
     localStorage.removeItem("isLoggedIn");
     localStorage.removeItem("name");
+  }
+
+  setLoading(loading: boolean): void {
+    
+    if (loading === true) {
+      this.loadingSub.next(true);
+    }
+    if (loading === false) {
+      this.loadingSub.next(false);
+    }
   }
 }
